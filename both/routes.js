@@ -14,4 +14,12 @@ Router.map(function() {
     template: 'upload'
   });
 
+  this.route('place', {
+    path: '/place/:_id',
+    template: 'place',
+    data: function() {
+      return Places.findOne({_id: this.params._id});
+    }
+  });
+
 });

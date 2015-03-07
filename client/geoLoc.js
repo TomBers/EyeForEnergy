@@ -31,11 +31,17 @@ if (Meteor.isClient) {
 
       try{
         Places.find().forEach(function(place){
-          L.mapbox.featureLayer(place.loc).addTo(map);
+          // console.log(place);
+          L.mapbox.featureLayer(place.loc)
+          .bindPopup('<a href="/place/'+place._id+'">Go here</a>')
+          .addTo(map);
         });
       }catch(e){
 
       }
+
+
+
     });
 
 

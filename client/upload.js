@@ -52,7 +52,10 @@ Template.upload.events({
 
       }
     };
-    Meteor.call('addPlace',geeson);
+    Meteor.call('addPlace',geeson, function(error,res){
+      Router.go('/place/'+res);
+
+    });
 
   }
 
