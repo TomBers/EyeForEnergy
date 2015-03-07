@@ -1,0 +1,15 @@
+<template name='map'>
+<head>
+  <title>Map View</title>
+</head>
+
+<body>
+  <h1>Where am I?</h1>
+  <div id="map"></div>
+
+  {{#if error}}
+    <p>Error: {{error.message}}</p>
+  {{/if}}
+</body>
+
+</template>
