@@ -17,10 +17,11 @@ Template.upload.helpers({
 Template.upload.events({
   'click .takePic': function(){
 
-    MeteorCamera.getPicture({width:100,height:100,quality:100},function(err,img){
+    MeteorCamera.getPicture({width:250,height:250,quality:100},function(err,img){
       Session.set('image',img);
-      Meteor.call('getLocalDat', function(error,res){
-        Session.set('venues',res.response.venues);
+      Meteor.call('getLocalDat',Session.get('loc'), function(error,res){
+        console.log(res);
+        Session.set('venues',res.data.response.venues);
       });
     });
 },
@@ -54,6 +55,7 @@ Template.upload.events({
     }
   };
   Meteor.call('addPlace',geeson, function(error,res){
+    Session.set('venues',null);
     Router.go('/place/'+res);
 
   });
