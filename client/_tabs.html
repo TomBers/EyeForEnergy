@@ -1,0 +1,17 @@
+<template name="_tabs">
+  {{#if isAndroid}}
+    {{#ionTabs style="android" class="tabs-background-positive tabs-color-light"}}
+      {{> ionTab title="Home" path="home" icon="android-home"}}
+      {{> ionTab title="Upload" path="upload" icon="android-star"}}
+      {{> ionTab title="Map" path="map" icon="heart"}}
+      {{> ionTab title="Settings" path="settings" icon="gear-b"}}
+    {{/ionTabs}}
+  {{else}}
+    {{#ionTabs style="ios"}}
+      {{> ionTab title="Home" path="home" iconOff="ios-home-outline" iconOn="ios-home"}}
+      {{> ionTab title="Upload" path="upload" iconOff="ios-star-outline" iconOn="ios-star"}}
+      {{> ionTab title="Map" path="map" iconOff="ios-heart-outline" iconOn="ios-heart"}}
+      {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear"}}
+    {{/ionTabs}}
+  {{/if}}
+</template>

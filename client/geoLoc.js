@@ -1,15 +1,9 @@
-if (Meteor.isClient) {
-  Meteor.subscribe('Places');
-  Session.setDefault('ord',null);
-
-  Meteor.startup(function(){
-    // Session.set('pos',Geolocation.latLng());
+  Template.map.rendered = function () {
+    Meteor.subscribe('Places');
     map = null;
     fc = null;
     Mapbox.load();
-  });
 
-  Template.map.rendered = function () {
 
     this.autorun(function () {
       Session.set('pos',Geolocation.latLng() || { lat: 0, lng: 0 });
@@ -76,8 +70,6 @@ if (Meteor.isClient) {
   });
 
 
-
-}
 
 
 

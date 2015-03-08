@@ -1,11 +1,13 @@
 /* CSS declarations go here */
 
-body {
+/*body {
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
-}
+}*/
 
-#map { height: 480px; }
+#map {
+  height: 100%; 
+  }
 
 
 div.venu {

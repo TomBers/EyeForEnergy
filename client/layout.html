@@ -1,0 +1,12 @@
+<template name="layout">
+  <head>
+    <title>Eye for Energy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  {{#ionBody}}
+      {{#ionView}}
+        {{> yield}}
+        {{> _tabs}}
+      {{/ionView}}
+    {{/ionBody}}
+</template>

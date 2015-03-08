@@ -14,3 +14,6 @@ mdg:camera
 http
 jquery
 iron:router
+meteoric:ionic
+meteoric:ionicons-sass
+meteoric:ionic-sass
