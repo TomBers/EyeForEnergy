@@ -1,4 +1,9 @@
 <template name='map'>
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Map</h1>
+  {{/contentFor}}
+
   <div id="map"></div>
   {{#if error}}
     <p>Error: {{error.message}}</p>

@@ -6,11 +6,13 @@
 }*/
 
 #map {
+  margin-top:50px;
   height: 80%;
   }
 
 .padContainer{
-  padding:20px;
+  padding-top:75px;
+  padding-left:20px;
 }
 .camera-popup .photo-preview{
   width:280px;

@@ -1,4 +1,5 @@
 <template name='place'>
+  <div class='padContainer'>
   <h1>Place : {{loc.properties.title}}</h1>
   <ol>
     <li>{{_id}}</li>
@@ -6,4 +7,5 @@
     <li>{{loc.properties.description.contact.formattedPhone}}</li>
   </ol>
   <img src="{{loc.properties.image}}">
+</div>
 </template>
