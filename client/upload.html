@@ -5,9 +5,9 @@
   {{/contentFor}}
 
   {{#ionContent}}
-  <button class='takePic' style='width:125px;height:40px;font-size:1.5em;display:block;margin:40px auto;text-align:center'>Take Pic</button>
+  <button class='button button-positive button-block active takePic'>Take Pic</button>
 
-
+  {{> spinner}}
   {{#ionList}}
   {{#each venues}}
   {{#ionItem buttonRight=true avatar=true}}

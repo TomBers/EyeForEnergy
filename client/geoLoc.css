@@ -17,3 +17,18 @@
 .camera-popup .photo-preview{
   width:280px;
 }
+
+.lgin{
+  display:block;
+  margin:0 auto;
+  max-width:237px;
+}
+
+.takePic{
+  margin:0 auto;
+  font-size:2em;
+  max-width:200px;
+}
+.button.button-block, .button.button-full{
+  margin-top:40px;
+}

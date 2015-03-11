@@ -1,9 +1,12 @@
 <template name='place'>
   <div class='padContainer'>
-  <h1>Place : {{loc.properties.title}}</h1>
-  <ol>
-    <li>{{_id}}</li>
-    <li>{{loc.type}}</li>
+  <h1>{{loc.properties.title}}</h1>
+  <ol style='font-size:1.2em'>
+    <li>{{loc.properties.description.categories.[0].shortName}}</li>
+    <li>{{loc.properties.description.location.address}}</li>
+    <li>{{loc.properties.description.location.city}}</li>
+    <li>{{loc.properties.description.location.postalCode}}</li>
+    <li>{{loc.properties.description.url}}</li>
     <li>{{loc.properties.description.contact.formattedPhone}}</li>
   </ol>
   <img src="{{loc.properties.image}}">

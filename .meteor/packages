@@ -17,3 +17,6 @@ iron:router
 meteoric:ionic
 meteoric:ionicons-sass
 meteoric:ionic-sass
+sacha:spin
+accounts-password
+accounts-ui
